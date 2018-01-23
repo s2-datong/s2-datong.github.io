@@ -69,7 +69,7 @@ $(document).on('blur', '.auto-form', function(){
 		
 	}else{
 		$(this).addClass('data-saving');
-		setTimeout(function(){ obj.addClass('data-saved'); }, 3000);
+		setTimeout(function(){ obj.removeClass('data-saving').addClass('data-saved'); }, 3000);
 		setTimeout( removeSaved, 6000, obj);
 		/*$.post("/save.php", data, function(ret){
 			obj.removeClass('data-saving');
