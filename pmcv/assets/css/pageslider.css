@@ -1,0 +1,73 @@
+
+#maincontainer {
+    position: relative;
+	padding: 0px;
+	margin: 0px;
+    width: 100%;
+    min-height: 500px;
+    overflow-x: hidden;
+	
+}
+/*
+@media (max-width: 600px) {
+	#maincontainer{
+		width: 100%;
+		
+	}
+}
+*/
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	-webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+ 
+.page.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+ 
+.page.center {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+ 
+.page.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+ 
+.page.transition {
+    transition: transform .25s;
+	-webkit-transition: transform .25s;
+}
+
+/* form loading*/
+.data-edit {
+	background-image:url('/assets/img/edit.png');
+	background-size: 20px 20px;
+    background-position:right center;
+    background-repeat: no-repeat;
+}
+.data-saving {
+	background-image:url('/assets/img/3.gif');
+	background-size: 25px 25px;
+    background-position:right center;
+    background-repeat: no-repeat;
+}
+.data-saved {
+	background:url('/assets/img/success.png');
+	background-size: 25px 25px;
+    background-position:right center;
+    background-repeat: no-repeat;
+}
+.data-not-saved {
+	background:url('/assets/img/error.png');
+	background-size: 25px 25px;
+    background-position:right center;
+    background-repeat: no-repeat;
+}
