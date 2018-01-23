@@ -48,25 +48,25 @@
 
 /* form loading*/
 .data-edit {
-	background-image:url('/assets/img/edit.png');
+	background-image:url('../img/edit.png');
 	background-size: 20px 20px;
     background-position:right center;
     background-repeat: no-repeat;
 }
 .data-saving {
-	background-image:url('/assets/img/3.gif');
+	background-image:url('../img/3.gif');
 	background-size: 25px 25px;
     background-position:right center;
     background-repeat: no-repeat;
 }
 .data-saved {
-	background:url('/assets/img/success.png');
+	background:url('../img/success.png');
 	background-size: 25px 25px;
     background-position:right center;
     background-repeat: no-repeat;
 }
 .data-not-saved {
-	background:url('/assets/img/error.png');
+	background:url('../img/error.png');
 	background-size: 25px 25px;
     background-position:right center;
     background-repeat: no-repeat;
