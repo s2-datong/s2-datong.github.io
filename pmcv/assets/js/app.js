@@ -69,7 +69,9 @@ $(document).on('blur', '.auto-form', function(){
 		
 	}else{
 		$(this).addClass('data-saving');
-		$.post("/save.php", data, function(ret){
+		setTimeout(function(){ obj.addClass('data-saved'); }, 3000);
+		setTimeout( removeSaved, 6000, obj);
+		/*$.post("/save.php", data, function(ret){
 			obj.removeClass('data-saving');
 			if(ret.status == 200){
 				obj.addClass('data-saved');
@@ -78,7 +80,7 @@ $(document).on('blur', '.auto-form', function(){
 				obj.addClass('data-not-saved');
 				setTimeout( removeNotSaved, 3000, obj);
 			}
-		});
+		});*/
 	}
 });
 
